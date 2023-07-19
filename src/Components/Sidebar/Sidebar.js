@@ -30,19 +30,35 @@ export default function Sidebar() {
               </Link>
             </li>
             <li>
-              <Link to={"/eventManage"}>
+              <Link to={"/home"}>
                 <span className="iconx">
-                  <Icon icon="bi:calendar-event-fill" />
+                  <Icon icon="healthicons:i-training-class-negative" />
                 </span>
-                Events
+            Dashboard
               </Link>
             </li>
             <li>
-              <Link to={"/batchCreate"}>
+              <Link to={"/task"}>
+                <span className="iconx">
+                  <Icon icon="healthicons:i-training-class-negative" />
+                </span>
+           Task
+              </Link>
+            </li>
+            <li>
+              <Link to={"/web"}>
+                <span className="iconx">
+                  <Icon icon="bi:calendar-event-fill" />
+                </span>
+                Webcode
+              </Link>
+            </li>
+            <li>
+              <Link to={"/cap"}>
                 <span className="iconx">
                   <Icon icon="fluent:contact-card-group-16-filled" />
                 </span>
-                Batches
+               Capstone
               </Link>
             </li>
             <li>
@@ -69,14 +85,25 @@ export default function Sidebar() {
                 Leave-application
               </Link>
             </li>
+
             <li>
-              <Link to={"/capstone"}>
+              <Link to={"/cap"}>
                 <span className="iconx">
                   <Icon icon="fluent:contact-card-group-16-filled" />
                 </span>
-               Capstone
+             Portfolio-submission
               </Link>
             </li>
+            <li>
+              <Link to={"/batchCreate"}>
+                <span className="iconx">
+                  <Icon icon="fluent:contact-card-group-16-filled" />
+                </span>
+                Batches
+              </Link>
+            </li>
+          
+           
           </ul>
            ) : sBar === "false" ? ( 
           <ul className="sidebar-list ">
@@ -88,14 +115,7 @@ export default function Sidebar() {
                 Class
               </Link>
             </li>
-            <li>
-              <Link to={"/stucapstone"}>
-                <span className="iconx">
-                  <Icon icon="fluent:clipboard-task-list-ltr-24-filled" />
-                </span>
-                Capstone
-              </Link>
-            </li>
+        
             
           </ul>
           ) : null} 
